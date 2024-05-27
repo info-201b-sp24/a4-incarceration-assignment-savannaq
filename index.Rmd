@@ -5,7 +5,7 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
+There is an ongoing crisis of mass incarceration in the United States that has gained traction due to its impact on communities of color, and particularly black Americans. Despite making up the minority of the population, black Americans are incarcerated at higher rates than white Americans, and our country is still reflecting systemic inequalities within the criminal justice system. This project will give you a deeper lok into the data on incarceration rates among different racial groups and explore the trends that occur.
 
 ### Summary Information
 
@@ -22,10 +22,25 @@ Feel free to calculate and report values that you find relevant. Again, remember
 ### The Dataset
 
 Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
+
+The dataset was collected by Vera Institute.
+
+How was the data collected or generated?
+
+Vera researchers collect data from criminal legal system agencies, federal courts, and the Federal Bureau of Prisons.
+
+Why was the data collected?
+
+Collecting data on jail populations is essential to understanding the impact jail's have on a community, and the data can be analyzed to reduce the number of people and time they spend in jail.
+
 How many observations (rows) are in your data?  
+
+There are 153811 observations.
+
 How many features (columns) are in the data?  
+
+There are 28 features.
+
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
 What are possible limitations or problems with this data?   (at least 200 words)
 
@@ -44,10 +59,10 @@ The first chart that you will create and include will show the trend over time o
 
 When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
 
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart1.R")}
 ```
+
+This chart visualizes how the incarceration rates have changed over time for different races, specifically black and white Americans.
 
 ### Variable Comparison Chart
 
@@ -59,6 +74,11 @@ The second chart that you will create and include will show how two different (c
 - The chart needs a clear title 
 - If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
 
+```{r, echo = FALSE, code = readLines("chart2.R")}
+```
+
+This chart compares the relationship between total population and total jail population. The clusters on the plot show the most commonly occurring data in their relationship and help to identify trends. As shown, counties with higher populations have a higher jail population, and counties with much lower populations also have a corresponding low jail population. There is some blank area in the middle, missing data, but following the trend of the rest of the plots we can predict what those numbers might look like.
+
 ### Map
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -69,3 +89,7 @@ The last chart that you will create and include will show how a variable is dist
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
 
+```{r, echo = FALSE, code = readLines("chart3.R")}
+```
+
+This map visualizes the distribution of total jail population and allows us to observe variations across different counties. Analyzing the data on the map provides spatial perspective and can help identify areas with higher and lower concentrations of jail populations.
